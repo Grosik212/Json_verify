@@ -1,3 +1,4 @@
+import unittest
 import json
 
 
@@ -38,10 +39,28 @@ def json_verify(json_file):
         return False
 
 
-json_file_path = 'test.json'
-result = json_verify(json_file_path)
+class TestJsonVerify(unittest.TestCase):
 
-if result:
-    print("JSON data is valid according to the specified conditions")
-else:
-    print("JSON data is invalid or contains errors")
+    def test_valid_json(self):
+        json_file_path = 'test.json'
+        self.assertTrue(json_verify(json_file_path))
+
+    def test_missing_resource_field(self):
+        json_file_path = 'missing_resource.json'
+        self.assertFalse(json_verify(json_file_path))
+
+    def test_resource_contains_only_star(self):
+        json_file_path = 'resource_star.json'
+        self.assertFalse(json_verify(json_file_path))
+
+    def test_invalid_json_file(self):
+        json_file_path = 'non_existing_file.json'
+        self.assertFalse(json_verify(json_file_path))
+
+    def test_invalid_json_format(self):
+        json_file_path = 'invalid_json_format.json'
+        self.assertFalse(json_verify(json_file_path))
+
+
+if __name__ == '__main__':
+    unittest.main()

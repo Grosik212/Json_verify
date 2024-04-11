@@ -9,14 +9,8 @@
                     "iam:ListRoles",
                     "iam:ListUsers"
                 ],
-                "Resource": "arn:aws:iam::123456789012:role/RoleName1"
-            },
-            {
-                "Sid": "IamGetUser",
-                "Effect": "Allow",
-                "Action": "iam:GetUser",
-                "Resource": "arn:aws:iam::123456789012:user/UserName1"
+                "Resource": "*"
             }
         ]
     }
-}
+    // Brak zamknięcia klamry dla "PolicyDocument", co powoduje błąd składniowy
