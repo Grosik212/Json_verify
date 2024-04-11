@@ -12,7 +12,7 @@ This `json_verify` program is used to verify JSON data according to specified co
 
 ## Usage
 
-There is a test.json file included
+There is a test.json file included.
 To use the `json_verify` function, follow these steps:
 
 1. Open a command prompt or a python interpreter.
