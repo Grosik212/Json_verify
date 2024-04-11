@@ -6,7 +6,7 @@ This `json_verify` program is used to verify JSON data according to specified co
 
 1. Download the `json_verify.py` file to your local environment.
 
-2. Make sure you have Python interpreter installed (required version: Python 3.x).
+2. Make sure you have Python interpreter installed
 
 3. You can use the program in your environment via command line or by incorporating it into your Python code.
 
