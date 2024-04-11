@@ -1,5 +1,6 @@
 import json
 
+
 def json_verify(json_file):
     try:
         with open(json_file, "r") as f:
