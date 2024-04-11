@@ -19,7 +19,7 @@ To use the `json_verify` function, follow these steps:
 
 2. Change `json_file_path` to your JSON file or leave the `test.json`
 
-3. Run the program, providing the path to the JSON file you want to verify.
+3. Run the program.
 
 ```bash
 python json_verify.py
