@@ -15,10 +15,12 @@ This `json_verify` program is used to verify JSON data according to specified co
 There is a test.json file included
 To use the `json_verify` function, follow these steps:
 
-1. Open a terminal or command prompt.
+1. Open a command prompt or a python interpreter.
 
-2. Run the program, providing the path to the JSON file you want to verify.
+2. Change `json_file_path` to your JSON file or leave the `test.json`
+
+3. Run the program, providing the path to the JSON file you want to verify.
 
 ```bash
-python json_verify.py test.json
+python json_verify.py
 
